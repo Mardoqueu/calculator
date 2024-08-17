@@ -1,5 +1,6 @@
 package com.example.calculator.entity;
 
+import com.example.calculator.entity.enums.OperationType;
 import jakarta.persistence.*;
 import lombok.Data;
 
