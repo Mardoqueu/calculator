@@ -23,3 +23,9 @@ public class RecordService {
 
     public void softDelete(Long recordId) {
         Record record = recordRepository.findById(recordId).orElseThrow();
+        record.setDeleted(true);
+        recordRepository.save(record);
+    }
+
+    // Additional business logic methods as needed
+}
